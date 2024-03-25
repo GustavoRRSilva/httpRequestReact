@@ -79,7 +79,8 @@ function App() {
               onChange={(e) => setPrice(e.target.value)}
             />
           </label>
-          <input type="submit" value="Enviar dados" />
+          {loading && <input type="submit" value="Aguarde" disabled/>}
+          {!loading && <input type="submit" value="Enviar dados" />}
         </form>
       </div>
     </>
