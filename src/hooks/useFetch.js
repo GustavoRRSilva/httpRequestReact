@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 
 export const useFetch = (url) => {
   const [data, setData] = useState(null);
+  //Loader
+  const [loading,setLoading] = useState(false);
+  
   //Refatoring post
 
   const [config, setConfig] = useState(null);
@@ -24,9 +27,11 @@ export const useFetch = (url) => {
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true)
       const res = await fetch(url);
       const json = await res.json();
       setData(json);
+      setLoading(false)
     };
     fetchData();
   }, [url, callFetch]);
@@ -44,5 +49,5 @@ export const useFetch = (url) => {
     httpRequest();
   }, [config]);
 
-  return { data, httpConfig };
+  return { data, httpConfig,loading };
 };

@@ -7,7 +7,7 @@ function App() {
   const url = "http://localhost:3000/products";
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
-  const { data: items, httpConfig } = useFetch(url);
+  const { data: items, httpConfig, loading } = useFetch(url);
 
   //Enviando dados
   useEffect(() => {
@@ -41,13 +41,14 @@ function App() {
 
     
     */
-    httpConfig(product,"POST")
+    httpConfig(product, "POST");
     //5 refatorando post
   };
   return (
     <>
       <div className="">
         <h2>Lista de produtos:</h2>
+        {loading && <p>Carregando dados...</p>}
         <ul>
           {items &&
             items.map((product) => (
