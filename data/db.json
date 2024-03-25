@@ -1,0 +1,177 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "id": "e038",
+      "name": "asd",
+      "price": "12"
+    },
+    {
+      "id": "27f6",
+      "name": "12",
+      "price": "a"
+    },
+    {
+      "id": "de21",
+      "name": "12",
+      "price": ""
+    },
+    {
+      "id": "4270",
+      "name": "12",
+      "price": "123"
+    },
+    {
+      "id": "c9c1",
+      "name": "aaa",
+      "price": "12"
+    },
+    {
+      "id": "392f",
+      "name": "avc",
+      "price": "12"
+    },
+    {
+      "id": "c925",
+      "name": "Gustavo",
+      "price": "12"
+    },
+    {
+      "id": "3d25",
+      "name": "gustavo",
+      "price": "12"
+    },
+    {
+      "id": "8c90",
+      "name": "aaa",
+      "price": "12"
+    },
+    {
+      "id": "03ed",
+      "name": "asd",
+      "price": "24"
+    },
+    {
+      "id": "0a17",
+      "name": "12",
+      "price": "12"
+    },
+    {
+      "id": "380b",
+      "name": "aaa",
+      "price": "12"
+    },
+    {
+      "0": {
+        "id": "1",
+        "name": "Camisa",
+        "price": 59.9
+      },
+      "1": {
+        "id": "2",
+        "name": "Calça vermelha",
+        "price": 90
+      },
+      "2": {
+        "id": "3",
+        "name": "Boné aba reta",
+        "price": 29.9
+      },
+      "3": {
+        "id": "e038",
+        "name": "asd",
+        "price": "12"
+      },
+      "4": {
+        "id": "27f6",
+        "name": "12",
+        "price": "a"
+      },
+      "5": {
+        "id": "de21",
+        "name": "12",
+        "price": ""
+      },
+      "6": {
+        "id": "4270",
+        "name": "12",
+        "price": "123"
+      },
+      "7": {
+        "id": "c9c1",
+        "name": "aaa",
+        "price": "12"
+      },
+      "8": {
+        "id": "392f",
+        "name": "avc",
+        "price": "12"
+      },
+      "9": {
+        "id": "c925",
+        "name": "Gustavo",
+        "price": "12"
+      },
+      "10": {
+        "id": "3d25",
+        "name": "gustavo",
+        "price": "12"
+      },
+      "11": {
+        "id": "8c90",
+        "name": "aaa",
+        "price": "12"
+      },
+      "12": {
+        "id": "03ed",
+        "name": "asd",
+        "price": "24"
+      },
+      "13": {
+        "id": "0a17",
+        "name": "12",
+        "price": "12"
+      },
+      "14": {
+        "id": "380b",
+        "name": "aaa",
+        "price": "12"
+      },
+      "id": "c195"
+    },
+    {
+      "id": "2230",
+      "name": "12",
+      "price": "12"
+    },
+    {
+      "id": "5d13",
+      "name": "12",
+      "price": "12"
+    },
+    {
+      "id": "cca6",
+      "name": "Gustavo",
+      "price": "12"
+    },
+    {
+      "id": "9dbc",
+      "name": "Gustavo",
+      "price": "12"
+    }
+  ]
+}
