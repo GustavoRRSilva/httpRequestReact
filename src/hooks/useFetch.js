@@ -5,6 +5,9 @@ export const useFetch = (url) => {
   //Loader
   const [loading,setLoading] = useState(false);
   
+  //Catching error
+  const[error,setError] = useState("");
+  
   //Refatoring post
 
   const [config, setConfig] = useState(null);
@@ -28,9 +31,14 @@ export const useFetch = (url) => {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true)
+     try {
       const res = await fetch(url);
       const json = await res.json();
       setData(json);
+     } catch (error) {
+      console.log(error.message)
+      setError("Houve um erro na requisição")
+     }
       setLoading(false)
     };
     fetchData();
@@ -49,5 +57,5 @@ export const useFetch = (url) => {
     httpRequest();
   }, [config]);
 
-  return { data, httpConfig,loading };
+  return { data, httpConfig,loading,error };
 };

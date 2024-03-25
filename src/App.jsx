@@ -4,10 +4,10 @@ import { useFetch } from "./hooks/useFetch";
 
 function App() {
   const [products, setProducts] = useState([]);
-  const url = "http://localhost:3000/products";
+  const url = "http://localhost:3001/products";
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
-  const { data: items, httpConfig, loading } = useFetch(url);
+  const { data: items, httpConfig, loading,error } = useFetch(url);
 
   //Enviando dados
   useEffect(() => {
@@ -49,6 +49,7 @@ function App() {
       <div className="">
         <h2>Lista de produtos:</h2>
         {loading && <p>Carregando dados...</p>}
+        {error && <p>{error}</p>}
         <ul>
           {items &&
             items.map((product) => (
